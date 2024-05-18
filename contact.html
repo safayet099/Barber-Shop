@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Assignement</title>
+    <style>
+        body{
+            background: #ededed url(	https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-header.gif) repeat-x top center;
+            line-height: 1;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            margin:0 auto;
+            padding: 0;
+            width: 960px;
+        }
+        #header .section{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #header .section .logo{
+            float: left;
+            margin: 0;
+            padding: 60px 0 0 10px;
+            width:324px;
+        }
+        #header .section .logo a{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-logo.png) repeat-x top left;
+            color: #ffff;
+            display: block;
+            font-family: 'Arimo-Bold';
+            font-size: 60px;
+            font-weight: normal;
+            height: 130px;
+            line-height: 130px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 270px;
+            cursor: pointer;
+        }
+        #header .section ul{
+            display: inline-block;
+            float: right;
+            margin: 0;
+            overflow: hidden;
+            padding: 114px 0 0;
+        }
+        #header .section ul li .selected{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-right-selected.gif) no-repeat top right;
+        
+        }
+        #header .section ul li {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-right.gif) no-repeat top right;
+            display: inline-block;
+            float: left;
+            list-style: none;
+            margin: 0 10px;
+            padding: 0 ;
+        }
+        #header .section ul li a{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-left.gif) no-repeat top left;
+            color: #ffff;
+            display: inline-block;
+            font-size: 16px;
+            height: 30px;
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            margin: 0;
+            padding: 0 15px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        #header .section ul li .selected a {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-left-selected.gif) no-repeat top left;
+        }
+        #header .section ul li a:hover {
+            color: #ccc;
+        }
+        #body {
+            margin: 0 auto;
+            min-height: 812px;
+            padding: 20px 0 50px;
+            width: 960px;
+        }
+        #body > .article {
+            margin: 0;
+            padding: 0;
+        }
+        #body > div {
+            margin: 0;
+            overflow: hidden;
+            padding: 50px 0 0;
+        }
+        #body > .article h3 {
+            padding-bottom: 20px;
+        }
+        #body h3 {
+            color: #2f394e;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 25px 10px 40px;
+            text-transform: capitalize;
+        }
+        #body > .article p {
+            color: #464646;
+            font-size: 13px;
+            line-height: 24px;
+            margin: 0;
+            padding: 0 10px;
+        }
+        #body > .article p a {
+            color: #464646;
+            text-decoration: underline;
+        }
+        #body > .article ul {
+            margin: 0;
+            padding: 30px 0 30px 10px;
+        }
+        #body > .article ul li {
+            color: #464646;
+            line-height: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #body > .article ul li a {
+            color: #464646;
+            text-decoration: none;
+        }
+        #footer {
+            background: #4c8f96;
+            border-top: 1px solid #9bd9e0;
+            margin: 0;
+            padding: 0;
+        }
+        #footer > div {
+            margin: 0 auto;
+            padding: 30px 0 28px;
+            overflow: hidden;
+            text-align: center;
+            width: 960px;
+        }
+        #footer div .connect {
+            background: #387a82;
+            float: right;
+            height: 18px;
+            margin: 0 20px 0 150px;
+            padding: 22px 20px;
+            overflow: hidden;
+            width: 144px;
+        }
+        #footer div p {
+            color: #ededed;
+            display: inline-block;
+            float: right;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            margin: 0;
+            padding: 27px 0 0;
+            text-align: center;
+        }
+        #footer div .connect #twitter {
+            background-position: 0 -32px;
+        }
+        #footer div .connect a {
+            background: url(	https://codeandcareer.com/assignments/html-css/assignment-1/images/icons.png) no-repeat;
+            display: block;
+            float: left;
+            height: 20px;
+            margin: 0 8px;
+            padding: 0;
+            text-indent: -99999px;
+            width: 20px;
+        }
+        #footer div .connect #facebook {
+            background-position: 0 -57px;
+        }
+        #footer div .connect #googleplus {
+            background-position: 0 -82px;
+        }
+        #footer div .connect #pinterest {
+            background-position: 0 -107px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="section">    
+            <div class="logo">
+                <a href="index.html">EDGE</a>
+            </div>
+            <ul>
+                <li class="selected"><a href="index.html">home</a></li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="hairstyle.html">hairstyles</a>
+                </li>
+                <li>
+                    <a href="news.html">news</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <div id="body">
+		<div class="article">
+			<h3>contact us</h3>
+			<p>
+				"This website template has been designed by" <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> "for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the" <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
+			</p>
+			<ul>
+				<li>
+					<span>Address :</span> 7177 Saint Michael Drive, Los Angeles, CA 90048, United States
+				</li>
+				<li>
+					<span>Office Phone Number :</span> (864) 232-3553
+				</li>
+				<li>
+					<span>Fax Number :</span> (864) 232-4160
+				</li>
+				<li>
+					<span>Email :</span> <a href="http://www.freewebsitetemplates.com/misc/contact">info@zizurz.com</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div id="footer">
+		<div>
+			<div class="connect">
+				<a href="#" id="twitter">twitter</a>
+				<a href="#" id="facebook">facebook</a>
+				<a href="#" id="googleplus">googleplus</a>
+				<a href="#" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				© copyright 2023 | all rights reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

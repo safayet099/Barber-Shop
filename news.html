@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Assignement</title>
+    <style>
+        body{
+            background: #ededed url(	https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-header.gif) repeat-x top center;
+            line-height: 1;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            margin:0 auto;
+            padding: 0;
+            width: 960px;
+        }
+        #header .section{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #header .section .logo{
+            float: left;
+            margin: 0;
+            padding: 60px 0 0 10px;
+            width:324px;
+        }
+        #header .section .logo a{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-logo.png) repeat-x top left;
+            color: #ffff;
+            display: block;
+            font-family: 'Arimo-Bold';
+            font-size: 60px;
+            font-weight: normal;
+            height: 130px;
+            line-height: 130px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 270px;
+            cursor: pointer;
+        }
+        #header .section ul{
+            display: inline-block;
+            float: right;
+            margin: 0;
+            overflow: hidden;
+            padding: 114px 0 0;
+        }
+        #header .section ul li .selected{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-right-selected.gif) no-repeat top right;
+        
+        }
+        #header .section ul li {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-right.gif) no-repeat top right;
+            display: inline-block;
+            float: left;
+            list-style: none;
+            margin: 0 10px;
+            padding: 0 ;
+        }
+        #header .section ul li a{
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-left.gif) no-repeat top left;
+            color: #ffff;
+            display: inline-block;
+            font-size: 16px;
+            height: 30px;
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            margin: 0;
+            padding: 0 15px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        #header .section ul li .selected a {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-nav-left-selected.gif) no-repeat top left;
+        }
+        #header .section ul li a:hover {
+            color: #ccc;
+        }
+        #footer {
+            background: #4c8f96;
+            border-top: 1px solid #9bd9e0;
+            margin: 0;
+            padding: 0;
+        }
+        #footer > div {
+            margin: 0 auto;
+            padding: 30px 0 28px;
+            overflow: hidden;
+            text-align: center;
+            width: 960px;
+        }
+        #footer div .connect {
+            background: #387a82;
+            float: right;
+            height: 18px;
+            margin: 0 20px 0 150px;
+            padding: 22px 20px;
+            overflow: hidden;
+            width: 144px;
+        }
+        #footer div p {
+            color: #ededed;
+            display: inline-block;
+            float: right;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            margin: 0;
+            padding: 27px 0 0;
+            text-align: center;
+        }
+        #footer div .connect #twitter {
+            background-position: 0 -32px;
+        }
+        #footer div .connect a {
+            background: url(	https://codeandcareer.com/assignments/html-css/assignment-1/images/icons.png) no-repeat;
+            display: block;
+            float: left;
+            height: 20px;
+            margin: 0 8px;
+            padding: 0;
+            text-indent: -99999px;
+            width: 20px;
+        }
+        #footer div .connect #facebook {
+            background-position: 0 -57px;
+        }
+        #footer div .connect #googleplus {
+            background-position: 0 -82px;
+        }
+        #footer div .connect #pinterest {
+            background-position: 0 -107px;
+        }
+        #body {
+            margin: 0 auto;
+            min-height: 812px;
+            padding: 20px 0 50px;
+            width: 960px;
+        }
+        #body .blog {
+            padding: 0;
+        }
+        #body > div {
+            margin: 0;
+            overflow: hidden;
+            padding: 50px 0 0;
+        }
+        #body .content {
+            float: left;
+            margin: 0 35px 0 10px;
+            padding: 0;
+            width: 585px;
+        }
+        #body div div {
+            float: left;
+            margin: 0 10px;
+            padding: 0;
+        }
+        #body .content h3 {
+            padding-bottom: 25px;
+            padding-left: 0;
+        }
+        #body h3 {
+            color: #2f394e;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 25px 10px 40px;
+            text-transform: capitalize;
+        }
+        #body .content p {
+            color: #464646;
+            font-size: 13px;
+            line-height: 24px;
+            margin: 0;
+            padding: 0 0 24px;
+        }
+        #body .content p a {
+            color: #464646;
+            text-decoration: underline;
+        }
+        #body .sidebar {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-sidebar.jpg) repeat-y top left;
+            float: right;
+            margin: 0 10px 82px 0;
+            padding: 0;
+            width: 320px;
+        }
+        #body .sidebar ul {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-sidebar-footer.jpg) no-repeat bottom left;
+            margin: 0;
+            padding: 0 20px 50px;
+        }
+        #body .sidebar ul li {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 24px;
+        }
+        #body .sidebar ul li span {
+            color: #2f394e;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.01em;
+            line-height: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        #body .sidebar ul li p {
+            color: #000;
+            font-size: 13px;
+            line-height: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        #body .sidebar ul li span a {
+            color: #2f394e;
+            text-decoration: none;
+        }
+        #body .sidebar h3 {
+            background: url(https://codeandcareer.com/assignments/html-css/assignment-1/images/bg-sidebar-heading.jpg) no-repeat 0 0;
+            color: #2f394e;
+            font-family: 'Comfortaa-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            margin: 0;
+            padding: 25px 10px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="section">    
+            <div class="logo">
+                <a href="index.html">EDGE</a>
+            </div>
+            <ul>
+                <li class="selected"><a href="index.html">home</a></li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="hairstyle.html">hairstyles</a>
+                </li>
+                <li>
+                    <a href="news.html">news</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>   
+    <div id="body">
+		<div class="blog">
+			<div class="content">
+				<h3>news</h3>
+				<p>
+					"Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What 19s more, they 19re absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the <a href="http://www.freewebsitetemplates.com/about/terms">Terms of Use</a>. You can even remove all our links if you want to. Looking for more templates? Just browse through all our <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> and find what you 19re looking for."
+				</p>
+				<p>
+					"But if you don 19t find any website template you can use, you can try our <a href="http://www.freewebsitetemplates.com/freewebdesign/">Free Web Design</a> service and tell us all about it. Maybe you 19re looking for something different, something special. And we love the challenge of doing something different and something special. If you 19re experiencing issues and concerns about this website template, join the discussion on <a href="http://www.freewebsitetemplates.com/forums/">on our forum</a> and meet other people in the community who share the same interests with you. Version 13."
+				</p>
+				<p>
+					"Please feel free to remove some or all the text and links of this page and replace it with your own About content. This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the" <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>". "
+				</p>
+			</div>
+			<div class="sidebar">
+				<h3>recent news</h3>
+				<ul>
+					<li>
+						<span><a href="#">Hair, I just meet you</a></span>
+						<p>
+							"Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What 19s more, they 19re absolutely free!"
+						</p>
+					</li>
+					<li>
+						<span><a href="#">Styling Hair</a></span>
+						<p>
+							"This website template has been designed by Free Website Templates for you, for free. You can remove any link to our website from this website template, you're free to use this website"
+						</p>
+					</li>
+					<li>
+						<span><a href="#">How to pick the right hairstyle</a></span>
+						<p>
+							"You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our links if you want to."
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+    <div id="footer">
+		<div>
+			<div class="connect">
+				<a href="#" id="twitter">twitter</a>
+				<a href="#" id="facebook">facebook</a>
+				<a href="#" id="googleplus">googleplus</a>
+				<a href="#" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				© copyright 2023 | all rights reserved.
+			</p>
+		</div>
+	</div>
+    
+</body>
+</html>
